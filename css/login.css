@@ -1,0 +1,96 @@
+.login-content{
+    max-width: 1024px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #3d1101;
+}
+.login-content h3{
+    font-size: 48px;
+    font-weight: 700;
+}
+.login-content h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+.login-item{
+    width: 35%;
+    padding: 15px;
+    margin-top: 35px;
+    border-top: 8px solid #E1A679;
+    box-shadow: 0px 2px 5px #ABABAB;
+    border-radius: 5px;
+}
+@media(max-width:768px){
+    .login-item{
+        width: 60%;
+    }
+}
+
+
+.login-item h5{
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.login-item label{
+    display: block;
+    margin-top: 14px;
+    font-size: 16px;
+}
+.login-item .input-item{
+    position: relative;
+}
+.login-item .input-item input{
+    width:100%;
+    padding:8px 8px 8px 30px;
+    border: 1px solid #ABABAB;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #8C8C8C;
+}
+.login-item .input-item .fa-regular{
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    color: #8C8C8C;
+}
+.login-item .text-href{
+    display: inline-block;
+    margin: 3px 0px 30px;
+    font-size: 12px;
+    color: #E1A679;
+}
+.login-item .text-href:hover{
+    text-decoration:underline;
+}
+.login-item .button{
+    display: flex;
+    justify-content: space-between;
+}
+.login-item .button .btn-join,
+.login-item .button .btn-login{
+    padding: 8px;
+    width: 48%;
+    font-size: 14px;
+    color: #fff;
+    border:none;
+    border-radius: 3px;
+    transition: all .2s;
+}
+.login-item .button .btn-join{
+    background: #ABABAB;
+}
+.login-item .button .btn-join:hover{
+    background: #8d8d8d;
+    cursor: pointer;
+}
+.login-item .button .btn-login{
+    background: #E1A679;
+}
+.login-item .button .btn-login:hover{
+    background: #cd8d5c;
+    cursor: pointer;
+}

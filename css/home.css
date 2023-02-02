@@ -1,0 +1,243 @@
+.feature{
+    max-width: 1024px;
+    margin: 0 auto 50px;
+    color:#3D1101;
+}
+.feature h4{
+    margin: 30px;
+    text-align: center;
+    position: relative;
+}
+.feature h4:before,
+.feature h4:after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    top: 50%;
+    background: #3D1101;
+}
+.feature h4::before{
+    left: calc(50% - 250px);
+}
+.feature h4::after{  
+    right: calc(50% - 250px); 
+}
+.feature-item{
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-around;
+}
+.feature-item li{
+    width:30%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.feature-item img{
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.feature-item h5{
+    text-align: center;
+    margin-bottom: 10px;
+}
+@media(max-width:576px){
+    .feature h4:before,
+    .feature h4:after{
+        display: none;
+    }
+    .feature-item{
+        flex-direction: column;
+        align-items:center;
+      }
+    .feature-item li{
+        width:50%;
+        margin-bottom: 30px;
+      }
+}
+
+
+.aboutchef{
+    background: #3D1101;
+    margin-bottom: 50px;
+    display:flex;
+    justify-content: space-evenly;
+    padding: 0 5%;
+}
+.aboutchef img{
+    display: block;
+    max-width: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.cheftext{
+    width:50%;
+    padding: 6% 3%;
+    color: #fff;
+}
+.cheftext h5{
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #E1A679;
+}
+@media(max-width:576px){
+    .aboutchef{
+        flex-direction:column;
+        align-items:center;
+    }
+    .aboutchef img{
+        max-width:100%;
+    }
+    .cheftext{
+        width: 80%;
+        text-align: center;
+    }
+    .cheftext h4{
+        font-size: 20px;
+    }
+    .cheftext h5{
+        font-size: 16px;
+    }
+}
+
+
+.comment{
+    max-width: 1024px;
+    margin: 0 auto 50px;
+    color: #3D1101;
+}
+.comment h4{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.comment-item{
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.comment-item li{
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+}
+.comment-item li img{
+    border-radius: 50%;
+}
+.comment-text{
+    margin-left: 13px;
+}
+.comment-text h5{
+    margin-bottom: 20px;
+}
+.comment-text p{
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.comment-text span{
+    font-weight: 500;
+    display: block;
+    text-align: right;
+    color: #E1A679;
+}
+@media(max-width:576px){
+    .comment-item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .comment-item li{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+
+.reserve{
+    padding: 50px 40px;
+    color: #3D1101;
+    background: rgba(250,250,250,0.70);
+}
+.reserve h4{
+    text-align: center;
+    margin-bottom: 38px;
+}
+.reserve-info{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+.reserve-map{
+    width: 50%;
+    height: 360px;
+    border: 1px solid #dcdcdc;
+}
+.reserve-form{
+    width: 50%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.reserve-form label,
+.reserve-form span{
+    margin-bottom: 4px;
+    display: block;
+}
+.reserve-form input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+.reserve-form .vegan{
+    display: flex;
+    justify-content: flex-start;
+}
+.reserve-form .vegan label{
+    margin-right: 6px;
+}
+.reserve-form .vegan input{
+    width: auto;
+    height: auto;
+    margin-right: 28px;
+}
+.reserve-form .btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.reserve-form .btn .btn-grey,
+.reserve-form .btn .btn-orange{
+    font-size: 12px;
+    color: #fff;
+    padding: 8px 20px;
+    margin-left: 11px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid transparent; 
+}
+.reserve-form .btn .btn-grey:hover,
+.reserve-form .btn .btn-orange:hover{
+    border: 2px solid #EFE9E7;
+}
+.reserve-form .btn .btn-grey{
+    background: #ABABAB; 
+}
+.reserve-form .btn .btn-orange{
+    background: #E1A679;
+}
+@media(max-width:576px){
+    .reserve-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .reserve-map{
+        width:80%;
+        margin-bottom: 30px;
+    }
+    .reserve-form{
+        width: 80%;
+        margin-left: 0px;
+    }
+}
